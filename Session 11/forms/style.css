@@ -1,0 +1,36 @@
+body{
+    background-color: #F4EDE4 !important;
+    color: #3A163F !important;
+}
+
+nav, button{
+    background-color: #3A163F !important;
+    color: #F4EDE4 !important;
+}
+
+a{
+    color: #F4EDE4 !important;
+}
+/* 
+span.navbar-toggler-icon{
+    background-color: #3A163F !important;
+    color: #F4EDE4 !important;
+}
+
+button.navbar-toggler{
+    color: #3A163F !important;
+    background-color: #F4EDE4 !important;
+} */
+
+ul.dropdown-menu{
+    background-color: #F4EDE4 !important;
+}
+
+a.dropdown-item{
+    color: #3A163F !important;
+}
+
+a.active{
+    background-color: #3A163F !important;
+    color: #F4EDE4 !important;
+}

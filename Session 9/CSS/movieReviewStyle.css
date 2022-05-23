@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(120deg, #E37598 0%, #F18F8F 25%, #B64F92 50%, #8D2E95 75%, #943B9B 100%);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+header {
+    font-size: 2rem;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+form button {
+    color: #9495BB;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+form button:hover {
+    background: #9495BB;
+    color: white;
+}
+.movie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.movie {
+    margin: 0.5rem;
+    background: white;
+    font-size: 1.5rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+.movie li {
+    flex: 1;
+}
+
+.awesome-btn,
+.thumbsDown-btn,
+.thumbsUp-btn {
+    background: #9495BB;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.awesome-btn{
+    background: #2B196A;
+}
+.thumbsUp-btn {
+    background: #F8D6CF;
+}
+
+.movie-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-fire,
+.fa-thumbs-up,
+.fa-thumbs-down {
+    pointer-events: none;
+}
+
+.awesome {
+    background-color: #2B196A;
+    color: white;
+    font-weight: 900;
+}
+
+.thumbUp {
+    background-color: #F8D6CF;
+    color: white;
+    font-weight: 900;
+}
+
+.thumbDown {
+    background-color: #9495BB;
+    color: white;
+    font-weight: 900;
+}
+
+/* Buat lebih bagus */

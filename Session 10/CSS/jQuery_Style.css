@@ -1,0 +1,209 @@
+/* -------------------------------- */
+/* -------Pengaturan Effects------- */
+/* -------------------------------- */
+div > button {
+    display: inline-block;
+}
+
+div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.eventFocus {
+    display: none;
+}
+
+#boxPink,
+#boxPurple,
+#boxBlue {
+    width: 100px;
+    height: 100px;
+    display: none;
+    background-color: #fed3d4;
+}
+#boxPurple {
+    background-color: #3f0b99;
+}
+#boxBlue {
+    background-color: #378bf1;
+}
+
+#panel,
+#flip {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    padding: 5px;
+    text-align: center;
+    background-color: #3f0b99;
+    border: solid 5px #fed3d4;
+    color: #fed3d4;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+/* CSS Class */
+span {
+    display: block;
+    text-align: center;
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+}
+.cool {
+    /* text-align: center; */
+    font: 700 4em/1 "Oswald", sans-serif;
+    letter-spacing: 0;
+    padding: 0.25em 0 0.325em;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+
+    /* Clip Background Image */
+
+    background: url(../Z_IMG/stacked-waves-haikei.svg) repeat-y;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    /* Animate Background Image */
+
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: aitf 5s linear infinite alternate;
+
+    /* Activate hardware acceleration for smoother animations */
+
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+/* Animation */
+#queueFunctionality {
+    background: #98bf21;
+    height: 100px;
+    width: 200px;
+    position: absolute;
+}
+
+#queuesFunctionality {
+    background: #98bf21;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+
+#predefinedValues {
+    background: #98bf21;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+}
+
+/* -------------------------------- */
+/* ---------Button menarik--------- */
+/* -------------------------------- */
+button {
+    color: #18033c;
+    display: block;
+    background: none;
+    border: #18033c solid 5px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 1em;
+    padding: 0.5em;
+    position: relative;
+    font-size: 2rem;
+}
+
+button::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+button:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+button::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    inset: 0 0 0 0;
+    background: #ffe2e6;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+/* ------------------------------- */
+/* Biar agar enak lihat tiap topik */
+/* ------------------------------- */
+
+/* Untuk scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #3f0b99;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #7b48ff;
+}
+/* Untuk scrollbar */
+
+h1 {
+    font-family: "Poppins", sans-serif;
+    border-radius: 0.5em;
+    text-align: center;
+    padding: 1em;
+    font-size: 3em;
+    background-color: #4e24e0;
+    color: #fed3d4;
+}
+
+hr {
+    margin: 3em 0;
+}
+
+h2 {
+    font-family: "Poppins", sans-serif;
+    border-radius: 0.5em;
+    text-align: center;
+    padding: 0.75em;
+    font-size: 2em;
+    background-color: #e6f1fd;
+    color: #378bf1;
+    border: #378bf1 solid 10px;
+}
+
+h3,
+h4 {
+    width: 20%;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+    border-radius: 0.5em;
+    text-align: center;
+    padding: 0.75em;
+    background-color: #71173a;
+    color: #f9b77a;
+}
