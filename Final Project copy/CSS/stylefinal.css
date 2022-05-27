@@ -1,0 +1,103 @@
+
+:root{
+    --main-color:#3876d6;
+}
+
+
+body{
+    background: #222;
+}
+
+section{
+    padding: 2px 9%;
+}
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5px 9%;
+}
+
+.header .logo{
+    font-weight: bolder;
+    color: #fff;
+    font-size: 25px;
+}
+
+.header .logo span{
+    color: var(--main-color);
+}
+
+.header .navbar a{
+    font-size: 1.7px;
+    color: #fff;
+    margin-left: 2px;
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+}
+
+#menu-bars{
+    font-size: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.home .content{
+    text-align: center;
+    padding-top: 6px;
+    margin: 2px auto;
+    max-width: 35px;
+}
+
+.home .content h3{
+    color: #fff;
+    font-size: 25px;
+}
+
+.header .navbar a{
+    display: flex;
+    background: #222;
+    border-radius: 5px;
+    padding: 13px;
+    margin: 13px;
+    font-size: 15px;
+}
+
+.landing .content{
+    color: #fff;
+    font-size: 25px;
+}
+
+.event .content{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.event .image{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.contact form{
+    max-width: 70px;
+    margin: 1px auto;
+    text-align: center;
+}
+
+.contact form .inputbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
